@@ -1,1 +1,3 @@
-"#deepGo" 
+### Learning Go Note 
+
+
