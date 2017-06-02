@@ -1,6 +1,6 @@
 ### Learning Go Note 
 
-#### date 20170602 
+#### 20170602 
 
 * Download Go from https://golang.org/ . setting Env （GOPATH/GOROOT） . in windows the default GOROOT is `C:/go` the default GOPATH is `%USERPROFILE%/go` . in unix . we should better set GOROOT to `/usr/local/go` and GOPATH to `$HOME/go`
 
