@@ -93,3 +93,10 @@ func testDefer(){
     fmt.Printf("hello");
 }
 ```
+* pointer . very much like c , but the declaring is not the same as we spoked before , and the pointer can not do arithmetic
+```
+var a *int // a is a int pointer
+b := 10 
+a = &b     // revalue a to b's underly location using operator & 
+fmt.Println(*a) // get the value out of a using * add the variable 
+```
