@@ -28,3 +28,15 @@ func t(){
   f := "hello world"
 }
 ```
+* go basic type 
+```go
+bool // in java => boolean , in c bool 
+string // in java => String , in c char[]
+int int8 int16 int32 int64 // in java only has int , in c also not has others
+uint uint8 unit16 uint32 uint64 // java do not has unsigned int type  , c only has uint .
+byte // the alias of int8
+rune // alias for int32 , represents a Unicode code point
+float32 float64 // java has float 32bite , c has float 
+complex64 complex128 // java has not such type , so is c 
+// by the way go do not has char which is what int16 stand for and double is represent by float64
+```
