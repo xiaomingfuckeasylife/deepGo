@@ -40,3 +40,7 @@ float32 float64 // java has float 32bite , c has float
 complex64 complex128 // java has not such type , so is c 
 // by the way go do not has char which is what int16 stand for and double is represent by float64
 ```
+* implicit uninitialized variable value , 0 for numerics , flase for bool , "" for string 
+
+* type conversion in java it is something like (Integer)str , in go it is like float64(str) , which way do you think is more human readable , i think it's go 
+ 
