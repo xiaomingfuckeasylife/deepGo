@@ -61,4 +61,28 @@ for { // omit all three statement
 
 }
 ```
-
+* if statement like for , can predefine a statement  the variable defined in pre-statement can be accessed only in if and else statement.
+```go
+if i:=10;i<9 {
+  
+}
+```
+* switch statement , also can start with a statement like for and if , not like java switch compare variable can be not just only int ,can also be other type like string . unlike java the switch will stop when one case is matched , then other case will not even be executed . switch with no condition is the same as switch true . this is very cool . 
+```go
+switch t :=1;t {
+	case 0:
+		fmt.Printf("hello switch 1\n")
+	case 1:
+		fmt.Printf("hello switch 2\n")
+	default:
+		fmt.Printf("hello switch 3\n")
+	}
+  
+  t := time.Now();
+	switch  {
+	case t.Day() > 1:
+		fmt.Printf("switch 1\n")
+	case t.Day() < 1:
+		fmt.Printf("switch 2\n")
+	}
+```
