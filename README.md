@@ -100,3 +100,16 @@ b := 10
 a = &b     // revalue a to b's underly location using operator & 
 fmt.Println(*a) // get the value out of a using * add the variable 
 ```
+
+* struct . A struct is a collection of fields. like in c . using dot to access struct field like in c , when we have a pointer struct , we can do not need to dereference the pointer then dot to the field .  declare a struct using struct literal
+```
+type A struct{
+  a int
+  b int
+}
+c := &A{1,2};
+c.a // no need to (*c).a
+
+
+
+```
