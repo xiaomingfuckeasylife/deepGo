@@ -13,7 +13,11 @@ go env GOROOT // using go env ## check out the value of go env variables
 
 * Read https://golang.org/doc/code.html#Workspaces 
 
+#### 20170603
 
+##### a tour of go
 
-
-
+* the export variable name is uppercase 
+* the syntax of go is different from c and more human . for more read https://blog.golang.org/gos-declaration-syntax
+* can have multiple return value , and can have the so called naked return .
+* 
