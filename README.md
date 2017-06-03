@@ -86,7 +86,7 @@ switch t :=1;t {
 		fmt.Printf("switch 2\n")
 	}
 ```
-* defer . this is a new key word , there is no such key word in java or c . defer means do it later , the defer call's argument will be initialzed immediatly but execution will be the last 
+* defer . this is a new key word , there is no such key word in java or c . defer means do it later , the defer call's argument will be initialzed immediatly but execution will be the last . for more about defer and panic and recover read https://blog.golang.org/defer-panic-and-recover
 ```go
 func testDefer(){
     defer fmt.Printf("bitch")
