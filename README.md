@@ -20,4 +20,11 @@ go env GOROOT // using go env ## check out the value of go env variables
 * the export variable name is uppercase 
 * the syntax of go is different from c and more human . for more read https://blog.golang.org/gos-declaration-syntax
 * can have multiple return value , and can have the so called naked return .
-* 
+* var statment declare a variable and the type is in the last it can be defined in the function lever or package lever , when we declare a variable and initialize it , then the type can be omitted , the := can replace implicitly of var and type , but the package variable must start with var ,func and so on so the := can not be used out of func  
+```go
+var a ,b ,c bool
+func t(){
+  var d , e int
+  f := "hello world"
+}
+```
