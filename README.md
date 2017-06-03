@@ -43,4 +43,8 @@ complex64 complex128 // java has not such type , so is c
 * implicit uninitialized variable value , 0 for numerics , flase for bool , "" for string 
 
 * type conversion in java it is something like (Integer)str , in go it is like float64(str) , which way do you think is more human readable , i think it's go 
- 
+
+* constant declared in go is the same as in c , using const statment. const can not using := for := is dynimic define the variable type ,but the constant can not have anything to do with dynimic so .
+
+
+
