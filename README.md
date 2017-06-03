@@ -46,5 +46,19 @@ complex64 complex128 // java has not such type , so is c
 
 * constant declared in go is the same as in c , using const statment. const can not using := for := is dynimic define the variable type ,but the constant can not have anything to do with dynimic so .
 
+* in go there are only one loop key word is for , there is no while , and while spelled for in go.
+```go
 
+for i:=0;i<10;i++{
+  sum:+=i;
+}
+
+for i<10 { // omit the first and third statement
+  // 
+}
+
+for { // omit all three statement
+
+}
+```
 
