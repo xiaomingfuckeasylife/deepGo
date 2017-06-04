@@ -115,7 +115,7 @@ c.a // no need to (*c).a
 ##### a tour of go
 * Array in go . var a [10]int. declare a variable a as a array of  ten integer. like in java array's size is defined when we define a array . add can not be resizing.
 
-* dynamic array  `slice` .  the type []T is a slice with Elements of Type T.  a[0:5] indicate the first five element of array a . there is no such concept in java or c . but it is as said more common used than array . in go . so we will say about that . slices are like references to arrays . if we change the slices value the under arary data will change accordingly . other slices that share the same under array will see the same changes. slice literal are like array literal just not contains the size . slice default , the low bounds are 0 the high bounds are the length of the underly array. by the way the zero value slice is nil 
+* dynamic array  `slice` .  the type []T is a slice with Elements of Type T.  a[0:5] indicate the first five element of array a . there is no such concept in java or c . but it is as said more common used than array . in go . so we will say about that . slices are like references to arrays . if we change the slices value the under arary data will change accordingly . other slices that share the same under array will see the same changes. slice literal are like array literal just not contains the size . slice default , the low bounds are 0 the high bounds are the length of the underly array. by the way the zero value slice is nil . creating slice with `make`  
 ```
 arrInt:= [5]int{1,2,3,4,5} ;
 
@@ -157,7 +157,10 @@ fmt.Printf("len is %d , cap is %d val %v \n",len(arr1),cap(arr1),arr1)
 var zeroSlice []int
 
 fmt.Printf("len is %d , cap is %d" , len(zeroSlice), cap(zeroSlice))
-	
+
+makeSlice := make([]int,5) // make a zero slice of capacity and len 5
+makeSlice1 := make([]int,0,5) // make a zero slice of capacity 5 and len 0  
+makeSlice1 = makeSlice1[:2] // as long as we have capacity we can rearrange the length.
 ```
 
 
