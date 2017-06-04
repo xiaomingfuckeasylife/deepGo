@@ -114,7 +114,9 @@ c.a // no need to (*c).a
 #### 20170604
 ##### a tour of go
 * Array in go . var a [10]int. declare a variable a as a array of  ten integer. like in java array's size is defined when we define a array . add can not be resizing.
-
+```
+b := [...]string{"Penn", "Teller"} // cool ha.
+```
 * dynamic array  `slice` .  the type []T is a slice with Elements of Type T.  a[0:5] indicate the first five element of array a . there is no such concept in java or c . but it is as said more common used than array . in go . so we will say about that . slices are like references to arrays . if we change the slices value the under arary data will change accordingly . other slices that share the same under array will see the same changes. slice literal are like array literal just not contains the size . slice default , the low bounds are 0 the high bounds are the length of the underly array. by the way the zero value slice is nil . creating slice with `make`  
 ```
 arrInt:= [5]int{1,2,3,4,5} ;
@@ -161,6 +163,41 @@ fmt.Printf("len is %d , cap is %d" , len(zeroSlice), cap(zeroSlice))
 makeSlice := make([]int,5) // make a zero slice of capacity and len 5
 makeSlice1 := make([]int,0,5) // make a zero slice of capacity 5 and len 0  
 makeSlice1 = makeSlice1[:2] // as long as we have capacity we can rearrange the length.
+
+// slice of slice 
+slice1 :=[]int{1,2,3};
+
+slice2 := [][]int{slice1}
+
+fmt.Printf("slice of slice is just like array of array %v",slice2)
 ```
 
+* append and copy slice , read https://blog.golang.org/go-slices-usage-and-internals
+
+* range in go , is a litter bit like iterator in java . 
+```
+sliceArr := []int{1,23}
+for  i,v := range sliceArr {
+	fmt.Printf("index is %d , value is %d",i,v)
+}
+for  _,v := range sliceArr {
+	fmt.Printf("value is %d",v)
+}
+for  i := range sliceArr {
+	fmt.Printf("index is %d",i)
+}
+```
+* map in go , like there is map in java.  and we can use make function to make map too.  
+```
+// insert or update a map value
+map["key"] = value
+// get key value 
+v := map["key"]
+// test a key exist or not . if not exist then ok = false and v is the zero value of Type Element . 
+v,ok := map["key"] 
+```
+
+* function value , like in c , functions can be arguments or returned values too.  function closure.  A closure is a function value that references variables from outside its body. The function may access and assign to the referenced variables; in this sense the function is "bound" to the variables.
+
+* method . like in java but not defined in the class scope , for in go there is no class
 
