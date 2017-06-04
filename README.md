@@ -199,5 +199,40 @@ v,ok := map["key"]
 
 * function value , like in c , functions can be arguments or returned values too.  function closure.  A closure is a function value that references variables from outside its body. The function may access and assign to the referenced variables; in this sense the function is "bound" to the variables.
 
-* method . like in java but not defined in the class scope , for in go there is no class
+* method . like in java but not defined in the class scope , for in go there is no class . method is like a function with a receiver argument . we can only declare a method with a receiver type in the same package of the method . we can not define a method with a receiver type not in the method package.  a pointer receiver consider to be a better receiver for we most often change the receiver's inner data , if it is not a pointer receiver , when we manipulate the receiver the underly type data will not change responsivily , for the receiver is just a copy of the source type. with functions , we have give exactly the arguments , but with with method , not neccesaryly . 
+```
+
+type A struct{
+  a int
+}
+
+func (a A) Abs() int{
+  if a < 0 {
+    return -a;
+  }
+  return a;
+}
+
+func main(){
+  a :=A{10}
+  a.Abs()
+  a1 := &a
+  a1.Abs()
+  
+}
+
+```
+
+* interface , a interface is a type defines a list of methods signature.  a value of interface type can hold any type that implements those methods . an type implements a interface by implements its methods, there is no explicit word for that , no "implements" key word like in java or c++ , implicit implementation decouples the interface and its implementations, which could then apear in any package without prearrangement.  the interface type hold zero method called a empty interface , which can hold any type , 
+
+```
+type A interface{}
+
+func main(){
+	i := 0;
+	var a A;
+	a = i;
+}
+```
+
 
