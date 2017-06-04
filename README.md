@@ -110,3 +110,13 @@ type A struct{
 c := &A{1,2};
 c.a // no need to (*c).a
 ```
+
+#### 20170604
+##### a tour of go
+* Array in go . var a [10]int. declare a variable a as a array of  ten integer. like in java array's size is defined when we define a array . add can not be resizing.
+
+* dynamic array  `slice` .  the type []T is a slice with Elements of Type T.  a[0:5] indicate the first five element of array a . there is no such concept in java or c . but it is as said more common used than array . in go . so we will say about that . 
+
+
+
+
