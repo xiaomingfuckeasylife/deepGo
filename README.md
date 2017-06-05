@@ -244,9 +244,19 @@ func main(){
 ```
 
 #### 20160605
-one of the most ubiquitous interface is stringer defined by fmt package .  it is the same as toString method in java . 
+`Stringer` . one of the most ubiquitous interface is stringer defined by fmt package .  it is the same as toString method in java . 
 ```
 type Stringer interface{
   String() string
 }
+```
+* `error` . just like Stringer it is also a build-in type .  Function often return a error . so when error happens they can execute some code by testing whether the error equals to nil .  a nil err value means success , a non nil err value means A error happened
+```
+type error interface {
+  Error() string
+}
+```
+* Reader . read data from stream . Reader method populates the given byte slice with data and returns the number of bytes populated and error value . it returns a io.EOF error when stream ends.
+```go
+func (T) Read(b []byte)(n int,err error)
 ```
