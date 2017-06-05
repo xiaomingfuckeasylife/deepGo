@@ -174,7 +174,7 @@ fmt.Printf("slice of slice is just like array of array %v",slice2)
 
 * append and copy slice , read https://blog.golang.org/go-slices-usage-and-internals
 
-* range in go , is a litter bit like iterator in java . 
+* range in go , is a litter bit like iterator in java .  range can iterate array and map 
 ```
 sliceArr := []int{1,23}
 for  i,v := range sliceArr {
@@ -185,6 +185,14 @@ for  _,v := range sliceArr {
 }
 for  i := range sliceArr {
 	fmt.Printf("index is %d",i)
+}
+
+hosts := map[string]IPAddr{
+	"loopback":  {127, 0, 0, 1},
+	"googleDNS": {8, 8, 8, 8},
+}
+for name, ip := range hosts {
+	fmt.Printf("%v: %v\n", name, ip)
 }
 ```
 * map in go , like there is map in java.  and we can use make function to make map too.  
@@ -235,4 +243,10 @@ func main(){
 }
 ```
 
-
+#### 20160605
+one of the most ubiquitous interface is stringer defined by fmt package .  it is the same as toString method in java . 
+```
+type Stringer interface{
+  String() string
+}
+```
