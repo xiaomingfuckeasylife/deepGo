@@ -267,3 +267,10 @@ func (T) Read(b []byte)(n int,err error)
 ```go
 go f(x,y,z) // start a goroutine run f . the evaluation of x , y , z in the current goroutine , the execution of f start in new goroutine . 
 ```
+
+* channels is a typed conduit that we can put data and receive data from it using `<-` . like map and slice we can make channels by using make(chan ch) . By default , send and receive are block until the other side is ready . this allows goroutine synchronzed without explicity lock or condition variables.  Buffered Channels `ch := make(chan int ,100)` send to bufferd channels block when channels is full , receive from a bufferd channels block when channels is empty.
+```go
+ch <- v // send v into channels 
+v := <- ch // receive v from channels 
+```
+
