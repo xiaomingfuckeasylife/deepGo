@@ -274,3 +274,14 @@ ch <- v // send v into channels
 v := <- ch // receive v from channels 
 ```
 
+#### 20170607
+
+* range can use to iterator the conduit of channal receiving data from a channal . it will stop when there is when the range hit the close sign. so we can close the channel when we are done sending data into channel . it is only normal for us to close a channel on a sending data func . sending data to a close func will cause panic .  but we do not must close a chan only when the receiver must be told there will no more data comming. 
+```go 
+v,ok := <-ch // if no more data receive and the chan is close then ok is false 
+```
+
+* the select statement let a goroutine wait on multiple compunication operations. A select blocks untils one of its case run . it choose one randamly when multiple are ready. using default on select . can receive or send data to a channel with out block.
+
+
+
