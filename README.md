@@ -282,6 +282,31 @@ v,ok := <-ch // if no more data receive and the chan is close then ok is false
 ```
 
 * the select statement let a goroutine wait on multiple compunication operations. A select blocks untils one of its case run . it choose one randamly when multiple are ready. using default on select . can receive or send data to a channel with out block.
+``` go 
+// hot key
+command + o => go to any type you want . 
 
+shift cmd + o => go to files 
 
+alt cmd + o => symbol  
 
+cmd + b => go to declaration 
+
+cmd 7 => structure window 
+
+cmd e => check recent files 
+
+shift cmd e => recent edit files
+
+fn + cmd +f7 => check symbol usages 
+
+cmd +n  => code generation 
+
+shift + cmd + A => action or option names
+
+build-in test web service
+
+build-in database 
+
+build-in version controller tools
+```
