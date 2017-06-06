@@ -260,3 +260,10 @@ type error interface {
 ```go
 func (T) Read(b []byte)(n int,err error)
 ```
+
+#### 20170606
+
+* goroutine . a light wait thread managed by Go runtime .  just like thread in java when we access the shared memory we must use synhronized . 
+```go
+go f(x,y,z) // start a goroutine run f . the evaluation of x , y , z in the current goroutine , the execution of f start in new goroutine . 
+```
