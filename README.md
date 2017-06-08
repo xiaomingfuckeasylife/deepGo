@@ -311,3 +311,8 @@ build-in database
 
 build-in version controller tools
 ```
+
+#### 20170608
+
+* Read https://golang.org/doc/code.html
+
