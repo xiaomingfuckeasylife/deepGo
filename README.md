@@ -316,3 +316,8 @@ build-in version controller tools
 
 * Read https://golang.org/doc/code.html
 
+#### 20170618
+
+* finishing Reading https://golang.org/doc/code.html 
+* starting reading the source code of go .
+
