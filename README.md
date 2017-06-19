@@ -319,5 +319,10 @@ build-in version controller tools
 #### 20170618
 
 * finishing Reading https://golang.org/doc/code.html 
-* starting reading the source code of go .
+* starting reading the source code of go . 
+
+#### 20170619 
+* finish reading unicode package source code ,and string package . prepared to go in the real project , watch the source code if neccessary for the efficiency consideration.
+
+
 
