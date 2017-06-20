@@ -325,4 +325,9 @@ build-in version controller tools
 * finish reading unicode package source code ,and string package . prepared to go in the real project , watch the source code if neccessary for the efficiency consideration.
 
 
+#### 20170620
+* struct is like Entity in java . how to use struct ? when to use struct ? just ask yourself when i should use entity , how should i use entity . and struct also can have methods . and a bunch of methods can make a interface , just like in java. 
+
+* []*string vs *[]string : the first one means A array of string pointer . the second one means a pointer point to a array of string . they are so not the same. 
+
 
