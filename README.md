@@ -331,3 +331,6 @@ build-in version controller tools
 * []*string vs *[]string : the first one means A array of string pointer . the second one means a pointer point to a array of string . they are so not the same. 
 
 * the Upper case letter means export , the lower case can be import in the same package.
+
+#### 20170621
+* 
