@@ -362,3 +362,14 @@ func byte2Str(b []byte) string {
 	return varStr
 }
 ```
+* do you know how go implement multiple interface ?
+```
+type Pipeline interface {
+    Process(items *page_items.PageItems, t com_interfaces.Task)
+}
+
+type CollectPipeline interface {
+    Pipeline // now CollectionPipeline has Process method too . using composition over implementations
+    GetCollected() []*page_items.PageItems
+}
+```
