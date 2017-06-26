@@ -349,3 +349,5 @@ build-in version controller tools
 	fmt.Println(d)
 ```
 
+* normally when we use struct we define a pointer to the struct . interface not so much . 
+
