@@ -334,3 +334,18 @@ build-in version controller tools
 
 #### 20170621
 * 
+
+#### 20170626
+* what is the difference between type conversion and type assertion .
+```go
+// type assertion deal with interface convert underly interface into any type that it is .
+	var a interface{} = int64(5)
+	b := a.(int64)
+	fmt.Println(b)
+
+// type conversion just convert type .
+	var c int32 = 74
+	d := int64(c)
+	fmt.Println(d)
+```
+
