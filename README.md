@@ -351,3 +351,14 @@ build-in version controller tools
 
 * normally when we use struct we define a pointer to the struct . interface not so much . 
 
+* how to convert a byte into string
+```go
+func byte2Str(b []byte) string {
+	var varStr string
+	for i:= 0 ; i <len(b);i++{
+		r , _ := utf8.DecodeRune(b[i:i+1])
+		varStr += string(r)
+	}
+	return varStr
+}
+```
