@@ -373,3 +373,6 @@ type CollectPipeline interface {
     GetCollected() []*page_items.PageItems
 }
 ```
+
+#### 20170628
+* Module and inteface oriented program . this is not drill .
