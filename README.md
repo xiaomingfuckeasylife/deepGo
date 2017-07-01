@@ -376,3 +376,7 @@ type CollectPipeline interface {
 
 #### 20170628
 * Module and inteface oriented program . this is not drill .
+
+#### 20170629
+* what is the difference between cookies and sessions https://stackoverflow.com/questions/6339783/what-is-the-difference-between-sessions-and-cookies-in-php . 
+
