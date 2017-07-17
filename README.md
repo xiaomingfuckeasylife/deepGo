@@ -380,3 +380,6 @@ type CollectPipeline interface {
 #### 20170701
 * what is the difference between cookies and sessions https://stackoverflow.com/questions/6339783/what-is-the-difference-between-sessions-and-cookies-in-php . 
 
+#### 20170717
+* finish reading https://github.com/astaxie/build-web-application-with-golang
+
