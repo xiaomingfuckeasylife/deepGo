@@ -385,4 +385,4 @@ type CollectPipeline interface {
 
 * ready write beego code .
 
-1. finish writen beego/httplib
+##  finish writen beego/httplib
