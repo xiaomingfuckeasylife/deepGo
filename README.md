@@ -383,5 +383,6 @@ type CollectPipeline interface {
 #### 20170717
 * finish reading https://github.com/astaxie/build-web-application-with-golang
 
-* ready copy write beego code .
+* ready write beego code .
 
+1. finish writen beego/httplib
