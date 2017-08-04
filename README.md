@@ -386,3 +386,9 @@ type CollectPipeline interface {
 
 ### ready write beego code .
 #####  finish writen beego/httplib
+
+### 20170804
+
+* reading https://code.tutsplus.com/tutorials/base-what-a-practical-introduction-to-base-encoding--net-27590 understand more about baseX
+
+
